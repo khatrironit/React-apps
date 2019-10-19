@@ -3,6 +3,7 @@ import Cardlist from'./Cardlist';
 import SearchBox from './SearchBox';
 //import {robots} from './robots';
 import './App.css';
+import Scroll from './Scroll';
 // const state = {
 //         robots : robots,
 //         searchfield: ""
@@ -39,7 +40,9 @@ class App extends Component{
                 <div className = 'tc'>
                     <h1 className = 'f1'>RoboFriends</h1>
                     <SearchBox searchchange = {this.onsearchchange} />
-                    <Cardlist robots = {filteredrobots} />
+                    <Scroll>
+                        <Cardlist robots = {filteredrobots} /> 
+                    </Scroll>
                 </div>
             );
         }
