@@ -1,11 +1,12 @@
 import React from 'react';
 
-function SearchBox(){
+function SearchBox({searchfield,searchchange}){
     return (
         <div className = 'pa2'>
             <input className = 'bg-lightest-blue pa2 ba b--green'
                 type = 'text' 
-                placeholder = 'search robots'>
+                placeholder = 'search robots'
+                onChange = {searchchange}>
             </input>
         </div>
     );

@@ -1,8 +1,7 @@
 import React from 'react';
 import Card from './Card';
-import { robots } from './robots';
 
-function Cardlist(){
+function Cardlist({robots}){
     return (
         <div>
             {
