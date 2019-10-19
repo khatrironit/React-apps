@@ -1,0 +1,3 @@
+[submodule "React-apps"]
+	path = React-apps
+	url = https://github.com/khatrironit/React-apps.git
